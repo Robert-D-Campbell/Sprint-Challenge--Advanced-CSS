@@ -1,1 +1,22 @@
 // Mixins Here
+//mixin
+.center-column-flex() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.around-flex() {
+  display: flex;
+  justify-content: space-around;
+}
+
+//parametric mixin
+.global-btn(@bgColor, @fontColor, @btnRadius) {
+  font-size: 1.6rem;
+  width: 33%;
+  padding: 2% 1%;
+  text-align: center;
+  background-color: @bgColor;
+  color: @fontColor;
+  border-radius: @btnRadius;
+}
